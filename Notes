@@ -1,0 +1,43 @@
+Common built-in variable types are:
+
+int - Integers (whole numbers, positive and negative)
+
+string - Strings (a sequence of characters, including letters, numbers, or symbols)
+
+float - Floating point numbers (numbers that use decimals)
+
+double - Double precision floating point numbers (just like a float, except it takes up 
+twice as much memory, so it can hold larger numbers or numbers with more decimal places)
+
+bool - Boolean variables (true or false)
+
+
+Input and Output
+
+In C#, to print, or write something as output to the console, 
+you use the Console.WriteLine("") function.
+
+Python
+
+color = input("What is your favorite color? ")
+
+C#
+
+Console.Write("What is your favorite color? ");
+string color = Console.ReadLine();
+
+
+String Interpolation
+In C#, if you would like to use a variable inside a string,
+you start the string with a dollar sign $ in the same way that in Python,
+you start a format string with an f.
+
+Python
+
+school = "BYU-Idaho"
+print(f"I am studying at {school}.")
+
+C#
+
+string school = "BYU-Idaho";
+Console.WriteLine($"I am studying at {school}.");
