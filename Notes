@@ -304,3 +304,84 @@ words = []
 words.append("phone")
 words.append("keyboard")
 words.append("mouse")
+
+
+FUNCTIONS
+
+The general structure of a function definition in C# is:
+
+returnType FunctionName(dataType parameter1, dataType parameter2)
+{
+    // function_body
+}
+
+Here is an example of a function that does not have parameters or a return type (hence the use of void):
+
+C#
+
+void DisplayMessage()
+{
+    Console.WriteLine("Hello world!");
+}
+
+Python
+
+def display_message():
+    print("Hello World")
+
+The next example shows a function that accepts a single string parameter:
+
+C#
+
+void DisplayPersonalMessage(string userName)
+{
+    Console.WriteLine($"Hello {userName}");
+}
+
+Python
+
+def display_personal_message(user_name):
+    print(f"Hello {user_name}")
+
+The next example shows a function that accepts two integers as parameters. 
+It adds them together and returns the result. Notice that the function specifies a 
+return value of int at the beginning of the definition.
+
+C#
+
+int AddNumbers(int first, int second)
+{
+    int sum = first + second;
+    return sum;
+}
+
+Python
+
+def add_numbers(first, second):
+    sum = first + second
+    return sum
+
+
+Functions VS Methods
+
+To define a standalone function in C#, use the static keyword before the return type:
+
+static void DisplayMessage()
+{
+    Console.WriteLine("Hello world!");
+}
+
+static void DisplayPersonalMessage(string userName)
+{
+    Console.WriteLine($"Hello {userName}");
+}
+
+static int AddNumbers(int first, int second)
+{
+    int sum = first + second;
+    return sum;
+}
+
+Until we start writing classes, you should put the static keyword in front of all your functions.
+
+Use static for all of your functions until we start writing classes.
