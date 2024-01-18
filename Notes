@@ -241,3 +241,66 @@ foreach (string color in colors)
 }
 
 The foreach loop will be used extensively in the next preparation material that discusses lists.
+
+
+Lists
+As you know, a major difference between C# and Python is that you must declare your variable types in C#. 
+While at first, this may seem like a burden in C#, you'll soon discover that it 
+helps you avoid many runtime errors.
+
+In a similar way, when you declare a new list variable in C#, you not only declare that it is a List, 
+you must also declare the type of data that can be put in the list. That way, if you create a list of users, 
+you will be prevented from accidentally adding an order or a product variable to this list.
+
+To create a new list of integers, you specify int inside angle brackets <> directly following 
+the name of the data structure: List<int> and if you want to have a list of strings, 
+you would use: List<string> as shown below.
+
+List<int> numbers;
+List<string> words;
+
+The code above declares a variable to hold the list, but before you can use one, 
+you need to create a new one to use with the new keyword.
+
+List<int> numbers;
+numbers = new List<int>();
+
+This is typically done on the same line:
+
+List<int> numbers = new List<int>();
+List<string> words = new List<string>();
+
+Notice the extra parentheses () at the end, that we use any time we create a new object.
+
+One more important thing to be aware of: Any file that uses Lists (or any other standard collection), 
+must refer to that library at the top of the file. (This is so common that sometimes your settings 
+for C# can be specified so that you do not not have include this, but it is important to know about it, 
+in case you run into problems.)
+
+using System.Collections.Generic;
+
+
+Adding Items to the List
+
+To add items to the list, you use the .Add() method:
+
+C#
+
+using System.Collections.Generic;
+
+...
+
+List<string> words = new List<string>();
+
+words.Add("phone");
+words.Add("keyboard");
+words.Add("mouse");
+
+
+Python
+
+words = []
+
+words.append("phone")
+words.append("keyboard")
+words.append("mouse")
